@@ -33,7 +33,7 @@ podman run -d --name microshift \
   --network=host \
   --ipc=host \
   -v /lib/modules:/lib/modules:ro \
-  -v microshift-/var/lib/microshift:z,rshared \
+  -v microshift:/var/lib/microshift:z,rshared \
   -v /sys:/sys:ro \
   -v /var/run:/var/run \
   -v /var/log:/var/log:rw,rshared \
